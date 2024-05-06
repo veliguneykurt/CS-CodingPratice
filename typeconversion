@@ -1,0 +1,79 @@
+using Karalama_Kodlar;
+using System.Runtime.InteropServices;
+
+internal class Program 
+{  
+
+
+    static void Main()
+    {
+        Console.WriteLine("Int To Double");
+        int a = 4;
+        double a1 = Convert.ToDouble(a);
+        Console.WriteLine(a1.GetType());
+        Console.WriteLine(a1 + 0.1);
+        Console.WriteLine("**************1");
+
+
+
+        Console.WriteLine("Double To Int");
+        double b = 5.4;
+        int b1 = Convert.ToInt32(b);
+        Console.WriteLine(b1.GetType());
+        Console.WriteLine(b1);
+        Console.WriteLine("*****************2");
+
+
+        Console.WriteLine("String To Int");
+
+        string c = "6";
+        int c1 = Convert.ToInt32(c);
+        Console.WriteLine(c1.GetType());
+        Console.WriteLine("******************3");
+
+
+        Console.WriteLine("string to Boolen");
+
+        string t = "true";
+        bool t1 = Convert.ToBoolean(t);
+        Console.WriteLine(t1.GetType());
+        Console.WriteLine("***************4");
+
+
+        Console.WriteLine("String to Int By Parse Method");
+        string numberString = "42";
+        int parsedNumber = int.Parse(numberString);
+        Console.WriteLine(parsedNumber.GetType());
+
+        Console.WriteLine("***************5");
+
+
+        Console.WriteLine("Try Parse Method");
+
+        if (int.TryParse("11", out int number))
+        {
+            // Conversion succeeded; 'number' contains the parsed value.
+            Console.WriteLine("Ok");
+        }
+        else
+        {
+            // Conversion failed.
+            Console.WriteLine("No Ok");
+        }
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
